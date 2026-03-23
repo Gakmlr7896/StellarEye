@@ -7,13 +7,13 @@ TARGETS = dataloader filter_galaxies
 all: $(TARGETS)
 
 dataloader: src/dataloader.cpp
-	$(CXX) $(CXXFLAGS) src/dataloader.cpp -o dataloader $(LIBS)
+	$(CXX) $(CXXFLAGS) src/dataloader.cpp -o Executable/dataloader $(LIBS)
 
 filter_galaxies: src/filter_galaxies.cpp
-	$(CXX) $(CXXFLAGS) src/filter_galaxies.cpp -o filter_galaxies $(LIBS)
+	$(CXX) $(CXXFLAGS) src/filter_galaxies.cpp -o Executable/filter_galaxies $(LIBS)
 
 GalaxyDataLoader: src/GalaxyDataLoader.cpp 
-	$(CXX) $(CXXFLAGS) src/GalaxyDataLoader.cpp -o GalaxyDataLoader $(LIBS)
+	$(CXX) $(CXXFLAGS) src/GalaxyDataLoader.cpp -o Executable/GalaxyDataLoader $(LIBS)
 
 clean:
 	rm -f $(TARGETS)
@@ -21,10 +21,10 @@ clean:
 .PHONY: all clean
 
 run_dataloader: dataloader
-	./dataloader
+	./Executable/dataloader
 
 run_filter: filter_galaxies
-	./filter_galaxies
+	./Executable/filter_galaxies
 
 run_galaxyloader: GalaxyDataLoader
-	./GalaxyDataLoader
+	./Executable/GalaxyDataLoader

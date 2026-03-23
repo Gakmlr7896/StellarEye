@@ -1,21 +1,14 @@
 // This is a test cpp file for educational uses , Its ""NOT"" a part of the project and will be deleted
 
 #include <iostream>
-#include <cmath> 
 using namespace std;
-
-double square(double x) {
-	return x*x;
+template <typename T>
+void print(T x){
+	cout << x << endl;
 }
-
-void print_square(double x) {
-	cout << "The square of " << x << " is " << square(x) << "\n" << endl;
+int main() {
+   	print("Hello world");
+   	print(2);
+  	print(sizeof(int)); 
+   	return 0;
 }
-
-int main(){
-	print_square(2);
-	double s2 = sqrt(4);
-	cout << "The square root of 4 is " << s2 << endl;
-	return 0;
-}
-		
