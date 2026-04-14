@@ -76,15 +76,15 @@ CMakeFiles/test.dir/src/test.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/test.cpp.o: /home/phar/Documents/StellarEye/src/test.cpp
 CMakeFiles/test.dir/src/test.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/phar/Documents/StellarEye/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/test.cpp.o -MF CMakeFiles/test.dir/src/test.cpp.o.d -o CMakeFiles/test.dir/src/test.cpp.o -c /home/phar/Documents/StellarEye/src/test.cpp
+	/home/phar/miniconda3/envs/DFM/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/test.cpp.o -MF CMakeFiles/test.dir/src/test.cpp.o.d -o CMakeFiles/test.dir/src/test.cpp.o -c /home/phar/Documents/StellarEye/src/test.cpp
 
 CMakeFiles/test.dir/src/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/src/test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/phar/Documents/StellarEye/src/test.cpp > CMakeFiles/test.dir/src/test.cpp.i
+	/home/phar/miniconda3/envs/DFM/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/phar/Documents/StellarEye/src/test.cpp > CMakeFiles/test.dir/src/test.cpp.i
 
 CMakeFiles/test.dir/src/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/phar/Documents/StellarEye/src/test.cpp -o CMakeFiles/test.dir/src/test.cpp.s
+	/home/phar/miniconda3/envs/DFM/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/phar/Documents/StellarEye/src/test.cpp -o CMakeFiles/test.dir/src/test.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
@@ -133,6 +133,11 @@ test: /home/phar/miniconda3/envs/DFM/lib/libopencv_wechat_qrcode.so.4.13.0
 test: /home/phar/miniconda3/envs/DFM/lib/libopencv_xfeatures2d.so.4.13.0
 test: /home/phar/miniconda3/envs/DFM/lib/libopencv_xobjdetect.so.4.13.0
 test: /home/phar/miniconda3/envs/DFM/lib/libopencv_xphoto.so.4.13.0
+test: /usr/local/libtorch/lib/libtorch.so
+test: /usr/local/libtorch/lib/libc10.so
+test: /usr/local/libtorch/lib/libkineto.a
+test: /usr/local/cuda-12.6/lib64/libnvrtc.so
+test: /usr/local/libtorch/lib/libc10_cuda.so
 test: /home/phar/miniconda3/envs/DFM/lib/libopencv_shape.so.4.13.0
 test: /home/phar/miniconda3/envs/DFM/lib/libopencv_highgui.so.4.13.0
 test: /home/phar/miniconda3/envs/DFM/lib/libopencv_datasets.so.4.13.0
@@ -153,6 +158,9 @@ test: /home/phar/miniconda3/envs/DFM/lib/libopencv_flann.so.4.13.0
 test: /home/phar/miniconda3/envs/DFM/lib/libopencv_photo.so.4.13.0
 test: /home/phar/miniconda3/envs/DFM/lib/libopencv_imgproc.so.4.13.0
 test: /home/phar/miniconda3/envs/DFM/lib/libopencv_core.so.4.13.0
+test: /usr/local/libtorch/lib/libc10_cuda.so
+test: /usr/local/libtorch/lib/libc10.so
+test: /usr/local/cuda-12.6/lib64/libcudart.so
 test: CMakeFiles/test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/phar/Documents/StellarEye/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)

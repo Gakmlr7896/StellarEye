@@ -1,7 +1,7 @@
 test: \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/crt1.o \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/crti.o \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/crtbegin.o \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/Scrt1.o \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/crti.o \
+  /home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtbeginS.o \
   CMakeFiles/test.dir/src/test.cpp.o \
   /home/phar/miniconda3/envs/DFM/lib/libopencv_gapi.so.4.13.0 \
   /home/phar/miniconda3/envs/DFM/lib/libopencv_stitching.so.4.13.0 \
@@ -40,6 +40,11 @@ test: \
   /home/phar/miniconda3/envs/DFM/lib/libopencv_xfeatures2d.so.4.13.0 \
   /home/phar/miniconda3/envs/DFM/lib/libopencv_xobjdetect.so.4.13.0 \
   /home/phar/miniconda3/envs/DFM/lib/libopencv_xphoto.so.4.13.0 \
+  /usr/local/libtorch/lib/libtorch.so \
+  /usr/local/libtorch/lib/libc10.so \
+  /usr/local/libtorch/lib/libkineto.a \
+  /usr/local/cuda-12.6/lib64/libnvrtc.so \
+  /usr/local/libtorch/lib/libc10_cuda.so \
   /home/phar/miniconda3/envs/DFM/lib/libopencv_shape.so.4.13.0 \
   /home/phar/miniconda3/envs/DFM/lib/libopencv_highgui.so.4.13.0 \
   /home/phar/miniconda3/envs/DFM/lib/libopencv_datasets.so.4.13.0 \
@@ -60,35 +65,42 @@ test: \
   /home/phar/miniconda3/envs/DFM/lib/libopencv_photo.so.4.13.0 \
   /home/phar/miniconda3/envs/DFM/lib/libopencv_imgproc.so.4.13.0 \
   /home/phar/miniconda3/envs/DFM/lib/libopencv_core.so.4.13.0 \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libstdc++.so \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libm.so \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libm.so \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libm.so \
-  /lib64/libm.so.6 \
-  /lib64/libmvec.so.1 \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libgcc_s.so \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libgcc_s.so \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libgcc_s.so \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libgcc_s.so.1 \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/libgcc.a \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/libgcc.a \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libc.so \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libc.so \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libc.so \
-  /lib64/libc.so.6 \
-  /usr/lib64/libc_nonshared.a \
-  /lib64/ld-linux-x86-64.so.2 \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libgcc_s.so \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libgcc_s.so \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libgcc_s.so \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libgcc_s.so.1 \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/libgcc.a \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/libgcc.a \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/crtend.o \
-  /usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/crtn.o \
-  /lib64/libpthread.so.0 \
-  /lib64/libdl.so.2 \
-  /lib64/ld-linux-x86-64.so.2 \
+  /usr/local/libtorch/lib/libtorch_cpu.so \
+  /usr/local/libtorch/lib/libtorch_cuda.so \
+  /usr/local/libtorch/lib/libc10_cuda.so \
+  /usr/local/libtorch/lib/libc10.so \
+  /usr/local/cuda-12.6/lib64/libcudart.so \
+  /usr/local/libtorch/lib/libtorch.so \
+  /home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libstdc++.so \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/libm.so \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/libm.so \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/libm.so \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libm.so.6 \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libmvec.so.1 \
+  /home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc_s.so \
+  /home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc_s.so \
+  /home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc_s.so \
+  /home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/libgcc_s.so.1 \
+  /home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc.a \
+  /home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc.a \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/libc.so \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/libc.so \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/libc.so \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libc.so.6 \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib64/libc_nonshared.a \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/ld-linux-x86-64.so.2 \
+  /home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc_s.so \
+  /home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc_s.so \
+  /home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc_s.so \
+  /home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/libgcc_s.so.1 \
+  /home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc.a \
+  /home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc.a \
+  /home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtendS.o \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/crtn.o \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libpthread.so.0 \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libdl.so.2 \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libm.so.6 \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/ld-linux-x86-64.so.2 \
   /home/phar/miniconda3/envs/DFM/lib/libgomp.so.1 \
   /home/phar/miniconda3/envs/DFM/lib/libQt6Widgets.so.6 \
   /home/phar/miniconda3/envs/DFM/lib/libQt6Gui.so.6 \
@@ -98,6 +110,7 @@ test: \
   /home/phar/miniconda3/envs/DFM/lib/libhdf5.so.320 \
   /home/phar/miniconda3/envs/DFM/lib/libglog.so.0 \
   /home/phar/miniconda3/envs/DFM/lib/libiconv.so.2 \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/librt.so.1 \
   /home/phar/miniconda3/envs/DFM/lib/libGL.so.1 \
   /home/phar/miniconda3/envs/DFM/lib/libQt6Test.so.6 \
   /home/phar/miniconda3/envs/DFM/lib/libQt6OpenGLWidgets.so.6 \
@@ -119,7 +132,13 @@ test: \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_log_internal_message.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_hash.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/./libabsl_hash.so.2601.0.0 \
-  /usr/lib64/libabsl_hash.so.2601.0.0 \
+  /home/phar/miniconda3/envs/DFM/lib/libabsl_hash.so.2601.0.0 \
+  /usr/local/libtorch/lib/libgomp-98b21ff3.so.1 \
+  /usr/local/libtorch/lib/libcupti-76dcad94.so.12 \
+  /usr/local/libtorch/lib/libcudart-09529672.so.12 \
+  /usr/local/libtorch/lib/libcublas-d9343511.so.12 \
+  /usr/local/libtorch/lib/libcublasLt-a4ddaed1.so.12 \
+  /usr/local/libtorch/lib/libcudnn.so.9 \
   /home/phar/miniconda3/envs/DFM/lib/libEGL.so.1 \
   /home/phar/miniconda3/envs/DFM/lib/libfontconfig.so.1 \
   /home/phar/miniconda3/envs/DFM/lib/libX11.so.6 \
@@ -130,7 +149,6 @@ test: \
   /home/phar/miniconda3/envs/DFM/lib/libicuuc.so.73 \
   /home/phar/miniconda3/envs/DFM/lib/libpcre2-16.so.0 \
   /home/phar/miniconda3/envs/DFM/lib/libzstd.so.1 \
-  /lib64/librt.so.1 \
   /home/phar/miniconda3/envs/DFM/lib/libgraphite2.so.3 \
   /home/phar/miniconda3/envs/DFM/lib/libaws-c-s3.so.0unstable \
   /home/phar/miniconda3/envs/DFM/lib/libaws-c-auth.so.1.0.0 \
@@ -178,7 +196,7 @@ test: \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_log_internal_conditions.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/./libabsl_log_internal_conditions.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_log_internal_conditions.so.2601.0.0 \
-  /usr/lib64/libabsl_log_internal_conditions.so.2601.0.0 \
+  /home/phar/miniconda3/envs/DFM/lib/libabsl_log_internal_conditions.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_log_internal_nullguard.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_raw_hash_set.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_status.so.2601.0.0 \
@@ -194,13 +212,13 @@ test: \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_throw_delegate.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/./libabsl_throw_delegate.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_throw_delegate.so.2601.0.0 \
-  /usr/lib64/libabsl_throw_delegate.so.2601.0.0 \
+  /home/phar/miniconda3/envs/DFM/lib/libabsl_throw_delegate.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_examine_stack.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_log_internal_format.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_log_internal_structured_proto.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/./libabsl_log_internal_structured_proto.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_log_internal_structured_proto.so.2601.0.0 \
-  /usr/lib64/libabsl_log_internal_structured_proto.so.2601.0.0 \
+  /home/phar/miniconda3/envs/DFM/lib/libabsl_log_internal_structured_proto.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_strerror.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_log_internal_log_sink_set.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_log_internal_globals.so.2601.0.0 \
@@ -210,9 +228,7 @@ test: \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_base.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_raw_logging_internal.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_city.so.2601.0.0 \
-  /home/phar/miniconda3/envs/DFM/lib/libabsl_int128.so.2601.0.0 \
-  /home/phar/miniconda3/envs/DFM/lib/libabsl_log_severity.so.2601.0.0 \
-  /usr/lib64/libabsl_log_severity.so.2601.0.0 \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libutil.so.1 \
   /home/phar/miniconda3/envs/DFM/lib/libxcb.so.1 \
   /home/phar/miniconda3/envs/DFM/lib/libpcre2-8.so.0 \
   /home/phar/miniconda3/envs/DFM/lib/libicudata.so.73 \
@@ -244,55 +260,57 @@ test: \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_hashtablez_sampler.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/./libabsl_hashtablez_sampler.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_hashtablez_sampler.so.2601.0.0 \
-  /usr/lib64/libabsl_hashtablez_sampler.so.2601.0.0 \
+  /home/phar/miniconda3/envs/DFM/lib/libabsl_hashtablez_sampler.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_crc_cord_state.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_cordz_functions.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/./libabsl_cordz_functions.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_cordz_functions.so.2601.0.0 \
-  /usr/lib64/libabsl_cordz_functions.so.2601.0.0 \
+  /home/phar/miniconda3/envs/DFM/lib/libabsl_cordz_functions.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_cordz_handle.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_stacktrace.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_kernel_timeout_internal.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_tracing_internal.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_malloc_internal.so.2601.0.0 \
+  /home/phar/miniconda3/envs/DFM/lib/libabsl_int128.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_symbolize.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_log_sink.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/./libabsl_log_sink.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_log_sink.so.2601.0.0 \
-  /usr/lib64/libabsl_log_sink.so.2601.0.0 \
+  /home/phar/miniconda3/envs/DFM/lib/libabsl_log_sink.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libXau.so.6 \
   /home/phar/miniconda3/envs/DFM/lib/libXdmcp.so.6 \
   /home/phar/miniconda3/envs/DFM/lib/libgmodule-2.0.so.0 \
-  /lib64/libresolv.so.2 \
+  /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libresolv.so.2 \
   /home/phar/miniconda3/envs/DFM/lib/libpangoft2-1.0.so.0 \
   /home/phar/miniconda3/envs/DFM/lib/libfribidi.so.0 \
   /home/phar/miniconda3/envs/DFM/lib/liblept.so.5 \
   /home/phar/miniconda3/envs/DFM/lib/libarchive.so.13 \
   /home/phar/miniconda3/envs/DFM/lib/libsndfile.so.1 \
+  /home/phar/miniconda3/envs/DFM/lib/libabsl_crc32c.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_exponential_biased.so.2601.0.0 \
-  /usr/lib64/libabsl_exponential_biased.so.2601.0.0 \
-  /home/phar/miniconda3/envs/DFM/lib/libabsl_graphcycles_internal.so.2601.0.0 \
-  /home/phar/miniconda3/envs/DFM/lib/libabsl_civil_time.so.2601.0.0 \
+  /home/phar/miniconda3/envs/DFM/lib/./libabsl_exponential_biased.so.2601.0.0 \
+  /home/phar/miniconda3/envs/DFM/lib/libabsl_exponential_biased.so.2601.0.0 \
+  /home/phar/miniconda3/envs/DFM/lib/libabsl_exponential_biased.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_borrowed_fixup_buffer.so.2601.0.0 \
-  /usr/lib64/libabsl_borrowed_fixup_buffer.so.2601.0.0 \
+  /home/phar/miniconda3/envs/DFM/lib/./libabsl_borrowed_fixup_buffer.so.2601.0.0 \
+  /home/phar/miniconda3/envs/DFM/lib/libabsl_borrowed_fixup_buffer.so.2601.0.0 \
+  /home/phar/miniconda3/envs/DFM/lib/libabsl_borrowed_fixup_buffer.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_debugging_internal.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libabsl_demangle_internal.so.2601.0.0 \
-  /home/phar/miniconda3/envs/DFM/lib/libabsl_demangle_rust.so.2601.0.0 \
-  /home/phar/miniconda3/envs/DFM/lib/libabsl_decode_rust_punycode.so.2601.0.0 \
-  /home/phar/miniconda3/envs/DFM/lib/libabsl_utf8_for_code_point.so.2601.0.0 \
-  /home/phar/miniconda3/envs/DFM/lib/libabsl_crc32c.so.2601.0.0 \
-  /home/phar/miniconda3/envs/DFM/lib/libabsl_log_entry.so.2601.0.0 \
   /home/phar/miniconda3/envs/DFM/lib/libgif.so.7 \
   /home/phar/miniconda3/envs/DFM/lib/liblz4.so.1 \
   /home/phar/miniconda3/envs/DFM/lib/libFLAC.so.14 \
   /home/phar/miniconda3/envs/DFM/lib/libmpg123.so.0 \
-  /home/phar/miniconda3/envs/DFM/lib/libabsl_crc_internal.so.2601.0.0
+  /home/phar/miniconda3/envs/DFM/lib/libabsl_crc_internal.so.2601.0.0 \
+  /home/phar/miniconda3/envs/DFM/lib/libabsl_demangle_rust.so.2601.0.0 \
+  /home/phar/miniconda3/envs/DFM/lib/libabsl_decode_rust_punycode.so.2601.0.0 \
+  /home/phar/miniconda3/envs/DFM/lib/libabsl_utf8_for_code_point.so.2601.0.0
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/crt1.o:
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/Scrt1.o:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/crti.o:
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/crti.o:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/crtbegin.o:
+/home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtbeginS.o:
 
 CMakeFiles/test.dir/src/test.cpp.o:
 
@@ -370,6 +388,16 @@ CMakeFiles/test.dir/src/test.cpp.o:
 
 /home/phar/miniconda3/envs/DFM/lib/libopencv_xphoto.so.4.13.0:
 
+/usr/local/libtorch/lib/libtorch.so:
+
+/usr/local/libtorch/lib/libc10.so:
+
+/usr/local/libtorch/lib/libkineto.a:
+
+/usr/local/cuda-12.6/lib64/libnvrtc.so:
+
+/usr/local/libtorch/lib/libc10_cuda.so:
+
 /home/phar/miniconda3/envs/DFM/lib/libopencv_shape.so.4.13.0:
 
 /home/phar/miniconda3/envs/DFM/lib/libopencv_highgui.so.4.13.0:
@@ -410,63 +438,77 @@ CMakeFiles/test.dir/src/test.cpp.o:
 
 /home/phar/miniconda3/envs/DFM/lib/libopencv_core.so.4.13.0:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libstdc++.so:
+/usr/local/libtorch/lib/libtorch_cpu.so:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libm.so:
+/usr/local/libtorch/lib/libtorch_cuda.so:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libm.so:
+/usr/local/libtorch/lib/libc10_cuda.so:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libm.so:
+/usr/local/libtorch/lib/libc10.so:
 
-/lib64/libm.so.6:
+/usr/local/cuda-12.6/lib64/libcudart.so:
 
-/lib64/libmvec.so.1:
+/usr/local/libtorch/lib/libtorch.so:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libgcc_s.so:
+/home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libstdc++.so:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libgcc_s.so:
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/libm.so:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libgcc_s.so:
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/libm.so:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libgcc_s.so.1:
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/libm.so:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/libgcc.a:
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libm.so.6:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/libgcc.a:
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libmvec.so.1:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libc.so:
+/home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc_s.so:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libc.so:
+/home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc_s.so:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libc.so:
+/home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc_s.so:
 
-/lib64/libc.so.6:
+/home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/libgcc_s.so.1:
 
-/usr/lib64/libc_nonshared.a:
+/home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc.a:
 
-/lib64/ld-linux-x86-64.so.2:
+/home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc.a:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libgcc_s.so:
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/libc.so:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libgcc_s.so:
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/libc.so:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libgcc_s.so:
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/libc.so:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/libgcc_s.so.1:
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libc.so.6:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/libgcc.a:
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib64/libc_nonshared.a:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/libgcc.a:
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/ld-linux-x86-64.so.2:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/crtend.o:
+/home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc_s.so:
 
-/usr/lib64/gcc/x86_64-slackware-linux/15.2.0/../../../../lib64/crtn.o:
+/home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc_s.so:
 
-/lib64/libpthread.so.0:
+/home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc_s.so:
 
-/lib64/libdl.so.2:
+/home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/libgcc_s.so.1:
 
-/lib64/ld-linux-x86-64.so.2:
+/home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc.a:
+
+/home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/libgcc.a:
+
+/home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtendS.o:
+
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/crtn.o:
+
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libpthread.so.0:
+
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libdl.so.2:
+
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libm.so.6:
+
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/ld-linux-x86-64.so.2:
 
 /home/phar/miniconda3/envs/DFM/lib/libgomp.so.1:
 
@@ -485,6 +527,8 @@ CMakeFiles/test.dir/src/test.cpp.o:
 /home/phar/miniconda3/envs/DFM/lib/libglog.so.0:
 
 /home/phar/miniconda3/envs/DFM/lib/libiconv.so.2:
+
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/librt.so.1:
 
 /home/phar/miniconda3/envs/DFM/lib/libGL.so.1:
 
@@ -528,7 +572,19 @@ CMakeFiles/test.dir/src/test.cpp.o:
 
 /home/phar/miniconda3/envs/DFM/lib/./libabsl_hash.so.2601.0.0:
 
-/usr/lib64/libabsl_hash.so.2601.0.0:
+/home/phar/miniconda3/envs/DFM/lib/libabsl_hash.so.2601.0.0:
+
+/usr/local/libtorch/lib/libgomp-98b21ff3.so.1:
+
+/usr/local/libtorch/lib/libcupti-76dcad94.so.12:
+
+/usr/local/libtorch/lib/libcudart-09529672.so.12:
+
+/usr/local/libtorch/lib/libcublas-d9343511.so.12:
+
+/usr/local/libtorch/lib/libcublasLt-a4ddaed1.so.12:
+
+/usr/local/libtorch/lib/libcudnn.so.9:
 
 /home/phar/miniconda3/envs/DFM/lib/libEGL.so.1:
 
@@ -549,8 +605,6 @@ CMakeFiles/test.dir/src/test.cpp.o:
 /home/phar/miniconda3/envs/DFM/lib/libpcre2-16.so.0:
 
 /home/phar/miniconda3/envs/DFM/lib/libzstd.so.1:
-
-/lib64/librt.so.1:
 
 /home/phar/miniconda3/envs/DFM/lib/libgraphite2.so.3:
 
@@ -646,7 +700,7 @@ CMakeFiles/test.dir/src/test.cpp.o:
 
 /home/phar/miniconda3/envs/DFM/lib/libabsl_log_internal_conditions.so.2601.0.0:
 
-/usr/lib64/libabsl_log_internal_conditions.so.2601.0.0:
+/home/phar/miniconda3/envs/DFM/lib/libabsl_log_internal_conditions.so.2601.0.0:
 
 /home/phar/miniconda3/envs/DFM/lib/libabsl_log_internal_nullguard.so.2601.0.0:
 
@@ -678,7 +732,7 @@ CMakeFiles/test.dir/src/test.cpp.o:
 
 /home/phar/miniconda3/envs/DFM/lib/libabsl_throw_delegate.so.2601.0.0:
 
-/usr/lib64/libabsl_throw_delegate.so.2601.0.0:
+/home/phar/miniconda3/envs/DFM/lib/libabsl_throw_delegate.so.2601.0.0:
 
 /home/phar/miniconda3/envs/DFM/lib/libabsl_examine_stack.so.2601.0.0:
 
@@ -690,7 +744,7 @@ CMakeFiles/test.dir/src/test.cpp.o:
 
 /home/phar/miniconda3/envs/DFM/lib/libabsl_log_internal_structured_proto.so.2601.0.0:
 
-/usr/lib64/libabsl_log_internal_structured_proto.so.2601.0.0:
+/home/phar/miniconda3/envs/DFM/lib/libabsl_log_internal_structured_proto.so.2601.0.0:
 
 /home/phar/miniconda3/envs/DFM/lib/libabsl_strerror.so.2601.0.0:
 
@@ -710,11 +764,7 @@ CMakeFiles/test.dir/src/test.cpp.o:
 
 /home/phar/miniconda3/envs/DFM/lib/libabsl_city.so.2601.0.0:
 
-/home/phar/miniconda3/envs/DFM/lib/libabsl_int128.so.2601.0.0:
-
-/home/phar/miniconda3/envs/DFM/lib/libabsl_log_severity.so.2601.0.0:
-
-/usr/lib64/libabsl_log_severity.so.2601.0.0:
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libutil.so.1:
 
 /home/phar/miniconda3/envs/DFM/lib/libxcb.so.1:
 
@@ -778,7 +828,7 @@ CMakeFiles/test.dir/src/test.cpp.o:
 
 /home/phar/miniconda3/envs/DFM/lib/libabsl_hashtablez_sampler.so.2601.0.0:
 
-/usr/lib64/libabsl_hashtablez_sampler.so.2601.0.0:
+/home/phar/miniconda3/envs/DFM/lib/libabsl_hashtablez_sampler.so.2601.0.0:
 
 /home/phar/miniconda3/envs/DFM/lib/libabsl_crc_cord_state.so.2601.0.0:
 
@@ -788,7 +838,7 @@ CMakeFiles/test.dir/src/test.cpp.o:
 
 /home/phar/miniconda3/envs/DFM/lib/libabsl_cordz_functions.so.2601.0.0:
 
-/usr/lib64/libabsl_cordz_functions.so.2601.0.0:
+/home/phar/miniconda3/envs/DFM/lib/libabsl_cordz_functions.so.2601.0.0:
 
 /home/phar/miniconda3/envs/DFM/lib/libabsl_cordz_handle.so.2601.0.0:
 
@@ -800,6 +850,8 @@ CMakeFiles/test.dir/src/test.cpp.o:
 
 /home/phar/miniconda3/envs/DFM/lib/libabsl_malloc_internal.so.2601.0.0:
 
+/home/phar/miniconda3/envs/DFM/lib/libabsl_int128.so.2601.0.0:
+
 /home/phar/miniconda3/envs/DFM/lib/libabsl_symbolize.so.2601.0.0:
 
 /home/phar/miniconda3/envs/DFM/lib/libabsl_log_sink.so.2601.0.0:
@@ -808,7 +860,7 @@ CMakeFiles/test.dir/src/test.cpp.o:
 
 /home/phar/miniconda3/envs/DFM/lib/libabsl_log_sink.so.2601.0.0:
 
-/usr/lib64/libabsl_log_sink.so.2601.0.0:
+/home/phar/miniconda3/envs/DFM/lib/libabsl_log_sink.so.2601.0.0:
 
 /home/phar/miniconda3/envs/DFM/lib/libXau.so.6:
 
@@ -816,7 +868,7 @@ CMakeFiles/test.dir/src/test.cpp.o:
 
 /home/phar/miniconda3/envs/DFM/lib/libgmodule-2.0.so.0:
 
-/lib64/libresolv.so.2:
+/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib64/libresolv.so.2:
 
 /home/phar/miniconda3/envs/DFM/lib/libpangoft2-1.0.so.0:
 
@@ -828,31 +880,27 @@ CMakeFiles/test.dir/src/test.cpp.o:
 
 /home/phar/miniconda3/envs/DFM/lib/libsndfile.so.1:
 
+/home/phar/miniconda3/envs/DFM/lib/libabsl_crc32c.so.2601.0.0:
+
 /home/phar/miniconda3/envs/DFM/lib/libabsl_exponential_biased.so.2601.0.0:
 
-/usr/lib64/libabsl_exponential_biased.so.2601.0.0:
+/home/phar/miniconda3/envs/DFM/lib/./libabsl_exponential_biased.so.2601.0.0:
 
-/home/phar/miniconda3/envs/DFM/lib/libabsl_graphcycles_internal.so.2601.0.0:
+/home/phar/miniconda3/envs/DFM/lib/libabsl_exponential_biased.so.2601.0.0:
 
-/home/phar/miniconda3/envs/DFM/lib/libabsl_civil_time.so.2601.0.0:
+/home/phar/miniconda3/envs/DFM/lib/libabsl_exponential_biased.so.2601.0.0:
 
 /home/phar/miniconda3/envs/DFM/lib/libabsl_borrowed_fixup_buffer.so.2601.0.0:
 
-/usr/lib64/libabsl_borrowed_fixup_buffer.so.2601.0.0:
+/home/phar/miniconda3/envs/DFM/lib/./libabsl_borrowed_fixup_buffer.so.2601.0.0:
+
+/home/phar/miniconda3/envs/DFM/lib/libabsl_borrowed_fixup_buffer.so.2601.0.0:
+
+/home/phar/miniconda3/envs/DFM/lib/libabsl_borrowed_fixup_buffer.so.2601.0.0:
 
 /home/phar/miniconda3/envs/DFM/lib/libabsl_debugging_internal.so.2601.0.0:
 
 /home/phar/miniconda3/envs/DFM/lib/libabsl_demangle_internal.so.2601.0.0:
-
-/home/phar/miniconda3/envs/DFM/lib/libabsl_demangle_rust.so.2601.0.0:
-
-/home/phar/miniconda3/envs/DFM/lib/libabsl_decode_rust_punycode.so.2601.0.0:
-
-/home/phar/miniconda3/envs/DFM/lib/libabsl_utf8_for_code_point.so.2601.0.0:
-
-/home/phar/miniconda3/envs/DFM/lib/libabsl_crc32c.so.2601.0.0:
-
-/home/phar/miniconda3/envs/DFM/lib/libabsl_log_entry.so.2601.0.0:
 
 /home/phar/miniconda3/envs/DFM/lib/libgif.so.7:
 
@@ -863,3 +911,9 @@ CMakeFiles/test.dir/src/test.cpp.o:
 /home/phar/miniconda3/envs/DFM/lib/libmpg123.so.0:
 
 /home/phar/miniconda3/envs/DFM/lib/libabsl_crc_internal.so.2601.0.0:
+
+/home/phar/miniconda3/envs/DFM/lib/libabsl_demangle_rust.so.2601.0.0:
+
+/home/phar/miniconda3/envs/DFM/lib/libabsl_decode_rust_punycode.so.2601.0.0:
+
+/home/phar/miniconda3/envs/DFM/lib/libabsl_utf8_for_code_point.so.2601.0.0:

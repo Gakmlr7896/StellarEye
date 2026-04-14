@@ -1,3 +1,4 @@
 /home/phar/Documents/StellarEye/build/CMakeFiles/test.dir
+/home/phar/Documents/StellarEye/build/CMakeFiles/test2.dir
 /home/phar/Documents/StellarEye/build/CMakeFiles/edit_cache.dir
 /home/phar/Documents/StellarEye/build/CMakeFiles/rebuild_cache.dir

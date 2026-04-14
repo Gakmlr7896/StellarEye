@@ -61,7 +61,7 @@ int main() {
 
                 // Resize the frame for display if it's too large
                 cv::Mat displayFrame;
-                double scale = 0.3; // Scale factor (0.3 = 30% size)
+                double scale = 0.5; // Scale factor (0.5 = 50% size)
                 cv::resize(frame, displayFrame, cv::Size(), scale, scale);
 
                 cv::imshow(windowName, displayFrame);
