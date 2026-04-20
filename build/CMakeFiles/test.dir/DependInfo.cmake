@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/phar/Documents/StellarEye/src/test.cpp" "CMakeFiles/test.dir/src/test.cpp.o" "gcc" "CMakeFiles/test.dir/src/test.cpp.o.d"
+  "/home/phar/Documents/StellarEye/src/TestModels/TestDistanceModel.cpp" "CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o" "gcc" "CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o.d"
   "" "test" "gcc" "CMakeFiles/test.dir/link.d"
   )
 

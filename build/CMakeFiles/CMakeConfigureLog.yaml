@@ -26998,3 +26998,3407 @@ events:
         8.9 
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:796 (find_path)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "path"
+    variable: "CUDA_TOOLKIT_INCLUDE"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "device_functions.h"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/include/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/include/"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:851 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_CUDART_LIBRARY"
+    description: "\"cudart\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cudart"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcudart.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:853 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cudart_static_LIBRARY"
+    description: "static CUDA runtime library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cudart_static"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcudart_static.a"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:871 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cudadevrt_LIBRARY"
+    description: "\"cudadevrt\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cudadevrt"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcudadevrt.a"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:908 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cupti_LIBRARY"
+    description: "\"cupti\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cupti"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/extras/CUPTI/lib64/"
+      - "/usr/local/cuda-12.6/extras/CUPTI/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/extras/CUPTI/lib64/libcupti.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:938 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_CUDA_LIBRARY"
+    description: "\"cuda\" library (older versions only)."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cuda"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    searched_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:833 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:938 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_CUDA_LIBRARY"
+    description: "\"cuda\" library (older versions only)."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cuda"
+    candidate_directories:
+      - "/usr/local/libtorch/lib/"
+      - "/usr/local/libtorch/"
+      - "/usr/local/cuda-12.6/bin/"
+      - "/home/phar/.local/bin/"
+      - "/home/phar/.ghcup/bin/"
+      - "/home/phar/miniconda3/envs/DFM/bin/"
+      - "/home/phar/miniconda3/condabin/"
+      - "/usr/lib64/go1.25.5/go/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/lib64/java/bin/"
+      - "/usr/lib64/libexec/kf5/"
+      - "/usr/lib64/qt5/bin/"
+      - "/usr/lib64/qt6/bin/"
+      - "/home/phar/miniconda3/envs/DFM/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/phar/miniconda3/envs/DFM/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/home/phar/miniconda3/envs/DFM/lib/"
+      - "/home/phar/miniconda3/envs/DFM/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    searched_directories:
+      - "/usr/local/libtorch/lib/"
+      - "/usr/local/libtorch/"
+      - "/usr/local/cuda-12.6/bin/"
+      - "/home/phar/.local/bin/"
+      - "/home/phar/.ghcup/bin/"
+      - "/home/phar/miniconda3/envs/DFM/bin/"
+      - "/home/phar/miniconda3/condabin/"
+      - "/usr/lib64/go1.25.5/go/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/lib64/java/bin/"
+      - "/usr/lib64/libexec/kf5/"
+      - "/usr/lib64/qt5/bin/"
+      - "/usr/lib64/qt6/bin/"
+      - "/home/phar/miniconda3/envs/DFM/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/phar/miniconda3/envs/DFM/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+    found: "/usr/lib64/libcuda.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:956 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cufft_LIBRARY"
+    description: "\"cufft\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cufft"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcufft.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:957 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cublas_LIBRARY"
+    description: "\"cublas\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cublas"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcublas.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:958 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cublasLt_LIBRARY"
+    description: "\"cublasLt\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cublasLt"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcublasLt.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:960 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cusparse_LIBRARY"
+    description: "\"cusparse\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cusparse"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcusparse.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:961 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_curand_LIBRARY"
+    description: "\"curand\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "curand"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcurand.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:968 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_nppc_LIBRARY"
+    description: "\"nppc\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nppc"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libnppc.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:979 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_npps_LIBRARY"
+    description: "\"npps\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "npps"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libnpps.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:982 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cusolver_LIBRARY"
+    description: "\"cusolver\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cusolver"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcusolver.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:108 (try_run)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    directories:
+      source: "/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp"
+      binary: "/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/libtorch/share/cmake/Caffe2;/usr/local/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /home/phar/miniconda3/envs/DFM/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ae1bf/fast
+        gmake[1]: Entering directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ae1bf.dir/build.make CMakeFiles/cmTC_ae1bf.dir/build
+        gmake[2]: Entering directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_ae1bf.dir/detect_cuda_version.cc.o
+        /home/phar/miniconda3/envs/DFM/bin/c++  -I/usr/local/cuda-12.6/include -std=gnu++17 -o CMakeFiles/cmTC_ae1bf.dir/detect_cuda_version.cc.o -c /home/phar/Documents/StellarEye/build/detect_cuda_version.cc
+        Linking CXX executable cmTC_ae1bf
+        /home/phar/miniconda3/envs/DFM/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae1bf.dir/link.txt --verbose=1
+        /home/phar/miniconda3/envs/DFM/bin/c++ CMakeFiles/cmTC_ae1bf.dir/detect_cuda_version.cc.o -o cmTC_ae1bf  -Wl,-rpath,/usr/local/cuda-12.6/lib64 /usr/local/cuda-12.6/lib64/libcudart.so
+        gmake[2]: Leaving directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        gmake[1]: Leaving directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.6
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:128 (try_run)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:188 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/utils.cmake:331 (cuda_select_nvcc_arch_flags)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:329 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    directories:
+      source: "/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp"
+      binary: "/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_CUDA_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/libtorch/share/cmake/Caffe2;/usr/local/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /home/phar/miniconda3/envs/DFM/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5e288/fast
+        gmake[1]: Entering directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5e288.dir/build.make CMakeFiles/cmTC_5e288.dir/build
+        gmake[2]: Entering directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_5e288.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/local/cuda-12.6/bin/nvcc -forward-unknown-to-host-compiler   -std=c++17 -MD -MT CMakeFiles/cmTC_5e288.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_5e288.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/phar/Documents/StellarEye/build/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_5e288.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_5e288
+        /home/phar/miniconda3/envs/DFM/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e288.dir/link.txt --verbose=1
+        /home/phar/miniconda3/envs/DFM/bin/g++ @CMakeFiles/cmTC_5e288.dir/objects1.rsp -o cmTC_5e288 @CMakeFiles/cmTC_5e288.dir/linkLibs.rsp -L"/usr/local/cuda-12.6/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda-12.6/targets/x86_64-linux/lib"
+        gmake[2]: Leaving directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        gmake[1]: Leaving directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        8.9 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:796 (find_path)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "path"
+    variable: "CUDA_TOOLKIT_INCLUDE"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "device_functions.h"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/include/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/include/"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:851 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_CUDART_LIBRARY"
+    description: "\"cudart\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cudart"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcudart.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:853 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cudart_static_LIBRARY"
+    description: "static CUDA runtime library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cudart_static"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcudart_static.a"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:871 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cudadevrt_LIBRARY"
+    description: "\"cudadevrt\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cudadevrt"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcudadevrt.a"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:908 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cupti_LIBRARY"
+    description: "\"cupti\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cupti"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/extras/CUPTI/lib64/"
+      - "/usr/local/cuda-12.6/extras/CUPTI/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/extras/CUPTI/lib64/libcupti.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:938 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_CUDA_LIBRARY"
+    description: "\"cuda\" library (older versions only)."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cuda"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    searched_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:833 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:938 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_CUDA_LIBRARY"
+    description: "\"cuda\" library (older versions only)."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cuda"
+    candidate_directories:
+      - "/usr/local/libtorch/lib/"
+      - "/usr/local/libtorch/"
+      - "/usr/local/cuda-12.6/bin/"
+      - "/home/phar/.local/bin/"
+      - "/home/phar/.ghcup/bin/"
+      - "/home/phar/miniconda3/envs/DFM/bin/"
+      - "/home/phar/miniconda3/condabin/"
+      - "/usr/lib64/go1.25.5/go/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/lib64/java/bin/"
+      - "/usr/lib64/libexec/kf5/"
+      - "/usr/lib64/qt5/bin/"
+      - "/usr/lib64/qt6/bin/"
+      - "/home/phar/miniconda3/envs/DFM/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/phar/miniconda3/envs/DFM/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/home/phar/miniconda3/envs/DFM/lib/"
+      - "/home/phar/miniconda3/envs/DFM/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    searched_directories:
+      - "/usr/local/libtorch/lib/"
+      - "/usr/local/libtorch/"
+      - "/usr/local/cuda-12.6/bin/"
+      - "/home/phar/.local/bin/"
+      - "/home/phar/.ghcup/bin/"
+      - "/home/phar/miniconda3/envs/DFM/bin/"
+      - "/home/phar/miniconda3/condabin/"
+      - "/usr/lib64/go1.25.5/go/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/lib64/java/bin/"
+      - "/usr/lib64/libexec/kf5/"
+      - "/usr/lib64/qt5/bin/"
+      - "/usr/lib64/qt6/bin/"
+      - "/home/phar/miniconda3/envs/DFM/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/phar/miniconda3/envs/DFM/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+    found: "/usr/lib64/libcuda.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:956 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cufft_LIBRARY"
+    description: "\"cufft\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cufft"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcufft.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:957 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cublas_LIBRARY"
+    description: "\"cublas\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cublas"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcublas.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:958 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cublasLt_LIBRARY"
+    description: "\"cublasLt\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cublasLt"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcublasLt.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:960 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cusparse_LIBRARY"
+    description: "\"cusparse\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cusparse"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcusparse.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:961 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_curand_LIBRARY"
+    description: "\"curand\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "curand"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcurand.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:968 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_nppc_LIBRARY"
+    description: "\"nppc\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nppc"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libnppc.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:979 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_npps_LIBRARY"
+    description: "\"npps\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "npps"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libnpps.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:982 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cusolver_LIBRARY"
+    description: "\"cusolver\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cusolver"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcusolver.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:108 (try_run)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    directories:
+      source: "/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp"
+      binary: "/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/libtorch/share/cmake/Caffe2;/usr/local/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /home/phar/miniconda3/envs/DFM/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5e7b0/fast
+        gmake[1]: Entering directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5e7b0.dir/build.make CMakeFiles/cmTC_5e7b0.dir/build
+        gmake[2]: Entering directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_5e7b0.dir/detect_cuda_version.cc.o
+        /home/phar/miniconda3/envs/DFM/bin/c++  -I/usr/local/cuda-12.6/include -std=gnu++17 -o CMakeFiles/cmTC_5e7b0.dir/detect_cuda_version.cc.o -c /home/phar/Documents/StellarEye/build/detect_cuda_version.cc
+        Linking CXX executable cmTC_5e7b0
+        /home/phar/miniconda3/envs/DFM/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e7b0.dir/link.txt --verbose=1
+        /home/phar/miniconda3/envs/DFM/bin/c++ CMakeFiles/cmTC_5e7b0.dir/detect_cuda_version.cc.o -o cmTC_5e7b0  -Wl,-rpath,/usr/local/cuda-12.6/lib64 /usr/local/cuda-12.6/lib64/libcudart.so
+        gmake[2]: Leaving directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        gmake[1]: Leaving directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.6
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:128 (try_run)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:188 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/utils.cmake:331 (cuda_select_nvcc_arch_flags)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:329 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    directories:
+      source: "/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp"
+      binary: "/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_CUDA_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/libtorch/share/cmake/Caffe2;/usr/local/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /home/phar/miniconda3/envs/DFM/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c4105/fast
+        gmake[1]: Entering directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c4105.dir/build.make CMakeFiles/cmTC_c4105.dir/build
+        gmake[2]: Entering directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_c4105.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/local/cuda-12.6/bin/nvcc -forward-unknown-to-host-compiler   -std=c++17 -MD -MT CMakeFiles/cmTC_c4105.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_c4105.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/phar/Documents/StellarEye/build/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_c4105.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_c4105
+        /home/phar/miniconda3/envs/DFM/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4105.dir/link.txt --verbose=1
+        /home/phar/miniconda3/envs/DFM/bin/g++ @CMakeFiles/cmTC_c4105.dir/objects1.rsp -o cmTC_c4105 @CMakeFiles/cmTC_c4105.dir/linkLibs.rsp -L"/usr/local/cuda-12.6/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda-12.6/targets/x86_64-linux/lib"
+        gmake[2]: Leaving directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        gmake[1]: Leaving directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        8.9 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:796 (find_path)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "path"
+    variable: "CUDA_TOOLKIT_INCLUDE"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "device_functions.h"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/include/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/include/"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:851 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_CUDART_LIBRARY"
+    description: "\"cudart\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cudart"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcudart.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:853 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cudart_static_LIBRARY"
+    description: "static CUDA runtime library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cudart_static"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcudart_static.a"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:871 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cudadevrt_LIBRARY"
+    description: "\"cudadevrt\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cudadevrt"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcudadevrt.a"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:908 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cupti_LIBRARY"
+    description: "\"cupti\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cupti"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/extras/CUPTI/lib64/"
+      - "/usr/local/cuda-12.6/extras/CUPTI/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/extras/CUPTI/lib64/libcupti.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:938 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_CUDA_LIBRARY"
+    description: "\"cuda\" library (older versions only)."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cuda"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    searched_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:833 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:938 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_CUDA_LIBRARY"
+    description: "\"cuda\" library (older versions only)."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cuda"
+    candidate_directories:
+      - "/usr/local/libtorch/lib/"
+      - "/usr/local/libtorch/"
+      - "/usr/local/cuda-12.6/bin/"
+      - "/home/phar/.local/bin/"
+      - "/home/phar/.ghcup/bin/"
+      - "/home/phar/miniconda3/envs/DFM/bin/"
+      - "/home/phar/miniconda3/condabin/"
+      - "/usr/lib64/go1.25.5/go/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/lib64/java/bin/"
+      - "/usr/lib64/libexec/kf5/"
+      - "/usr/lib64/qt5/bin/"
+      - "/usr/lib64/qt6/bin/"
+      - "/home/phar/miniconda3/envs/DFM/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/phar/miniconda3/envs/DFM/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/home/phar/miniconda3/envs/DFM/lib/"
+      - "/home/phar/miniconda3/envs/DFM/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    searched_directories:
+      - "/usr/local/libtorch/lib/"
+      - "/usr/local/libtorch/"
+      - "/usr/local/cuda-12.6/bin/"
+      - "/home/phar/.local/bin/"
+      - "/home/phar/.ghcup/bin/"
+      - "/home/phar/miniconda3/envs/DFM/bin/"
+      - "/home/phar/miniconda3/condabin/"
+      - "/usr/lib64/go1.25.5/go/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/lib64/java/bin/"
+      - "/usr/lib64/libexec/kf5/"
+      - "/usr/lib64/qt5/bin/"
+      - "/usr/lib64/qt6/bin/"
+      - "/home/phar/miniconda3/envs/DFM/x86_64-conda-linux-gnu/sysroot/usr/lib/"
+      - "/home/phar/miniconda3/envs/DFM/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+    found: "/usr/lib64/libcuda.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:956 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cufft_LIBRARY"
+    description: "\"cufft\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cufft"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcufft.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:957 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cublas_LIBRARY"
+    description: "\"cublas\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cublas"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcublas.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:958 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cublasLt_LIBRARY"
+    description: "\"cublasLt\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cublasLt"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcublasLt.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:960 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cusparse_LIBRARY"
+    description: "\"cusparse\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cusparse"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcusparse.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:961 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_curand_LIBRARY"
+    description: "\"curand\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "curand"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcurand.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:968 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_nppc_LIBRARY"
+    description: "\"nppc\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nppc"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libnppc.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:979 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_npps_LIBRARY"
+    description: "\"npps\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "npps"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libnpps.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:982 (find_cuda_helper_libs)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "CUDA_cusolver_LIBRARY"
+    description: "\"cusolver\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cusolver"
+    candidate_directories:
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/lib64/"
+      - "/usr/local/cuda-12.6/"
+    found: "/usr/local/cuda-12.6/lib64/libcusolver.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/usr/local/libtorch"
+      ENV{PATH}:
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/.cabal/bin"
+        - "/home/phar/.ghcup/bin"
+        - "/usr/local/cuda-12.6/bin"
+        - "/home/phar/.local/bin"
+        - "/home/phar/miniconda3/envs/DFM/bin"
+        - "/home/phar/miniconda3/condabin"
+        - "/usr/lib64/go1.25.5/go/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/lib64/java/bin"
+        - "/usr/lib64/libexec/kf5"
+        - "/usr/lib64/qt5/bin"
+        - "/usr/lib64/qt6/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/phar/miniconda3/envs/DFM"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/phar/miniconda3/envs/DFM"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:108 (try_run)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    directories:
+      source: "/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp"
+      binary: "/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/libtorch/share/cmake/Caffe2;/usr/local/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /home/phar/miniconda3/envs/DFM/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_40d67/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_40d67.dir/build.make CMakeFiles/cmTC_40d67.dir/build
+        gmake[1]: Entering directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_40d67.dir/detect_cuda_version.cc.o
+        /home/phar/miniconda3/envs/DFM/bin/c++  -I/usr/local/cuda-12.6/include -std=gnu++17 -o CMakeFiles/cmTC_40d67.dir/detect_cuda_version.cc.o -c /home/phar/Documents/StellarEye/build/detect_cuda_version.cc
+        Linking CXX executable cmTC_40d67
+        /home/phar/miniconda3/envs/DFM/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40d67.dir/link.txt --verbose=1
+        /home/phar/miniconda3/envs/DFM/bin/c++ CMakeFiles/cmTC_40d67.dir/detect_cuda_version.cc.o -o cmTC_40d67  -Wl,-rpath,/usr/local/cuda-12.6/lib64 /usr/local/cuda-12.6/lib64/libcudart.so
+        gmake[1]: Leaving directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.6
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:128 (try_run)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:188 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/utils.cmake:331 (cuda_select_nvcc_arch_flags)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:329 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    directories:
+      source: "/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp"
+      binary: "/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_CUDA_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/libtorch/share/cmake/Caffe2;/usr/local/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /home/phar/miniconda3/envs/DFM/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_572b3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_572b3.dir/build.make CMakeFiles/cmTC_572b3.dir/build
+        gmake[1]: Entering directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_572b3.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/local/cuda-12.6/bin/nvcc -forward-unknown-to-host-compiler   -std=c++17 -MD -MT CMakeFiles/cmTC_572b3.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_572b3.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/phar/Documents/StellarEye/build/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_572b3.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_572b3
+        /home/phar/miniconda3/envs/DFM/bin/cmake -E cmake_link_script CMakeFiles/cmTC_572b3.dir/link.txt --verbose=1
+        /home/phar/miniconda3/envs/DFM/bin/g++ @CMakeFiles/cmTC_572b3.dir/objects1.rsp -o cmTC_572b3 @CMakeFiles/cmTC_572b3.dir/linkLibs.rsp -L"/usr/local/cuda-12.6/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda-12.6/targets/x86_64-linux/lib"
+        gmake[1]: Leaving directory '/home/phar/Documents/StellarEye/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        8.9 
+      exitCode: 0
+...

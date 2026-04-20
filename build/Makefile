@@ -129,66 +129,29 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
-#=============================================================================
-# Target rules for targets named test2
-
-# Build rule for target.
-test2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test2
-.PHONY : test2
-
-# fast build rule for target.
-test2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/build
-.PHONY : test2/fast
-
-src/test.o: src/test.cpp.o
-.PHONY : src/test.o
+src/TestModels/TestDistanceModel.o: src/TestModels/TestDistanceModel.cpp.o
+.PHONY : src/TestModels/TestDistanceModel.o
 
 # target to build an object file
-src/test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/test.cpp.o
-.PHONY : src/test.cpp.o
+src/TestModels/TestDistanceModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o
+.PHONY : src/TestModels/TestDistanceModel.cpp.o
 
-src/test.i: src/test.cpp.i
-.PHONY : src/test.i
-
-# target to preprocess a source file
-src/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/test.cpp.i
-.PHONY : src/test.cpp.i
-
-src/test.s: src/test.cpp.s
-.PHONY : src/test.s
-
-# target to generate assembly for a file
-src/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/test.cpp.s
-.PHONY : src/test.cpp.s
-
-src/test2.o: src/test2.cpp.o
-.PHONY : src/test2.o
-
-# target to build an object file
-src/test2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/src/test2.cpp.o
-.PHONY : src/test2.cpp.o
-
-src/test2.i: src/test2.cpp.i
-.PHONY : src/test2.i
+src/TestModels/TestDistanceModel.i: src/TestModels/TestDistanceModel.cpp.i
+.PHONY : src/TestModels/TestDistanceModel.i
 
 # target to preprocess a source file
-src/test2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/src/test2.cpp.i
-.PHONY : src/test2.cpp.i
+src/TestModels/TestDistanceModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.i
+.PHONY : src/TestModels/TestDistanceModel.cpp.i
 
-src/test2.s: src/test2.cpp.s
-.PHONY : src/test2.s
+src/TestModels/TestDistanceModel.s: src/TestModels/TestDistanceModel.cpp.s
+.PHONY : src/TestModels/TestDistanceModel.s
 
 # target to generate assembly for a file
-src/test2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/src/test2.cpp.s
-.PHONY : src/test2.cpp.s
+src/TestModels/TestDistanceModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.s
+.PHONY : src/TestModels/TestDistanceModel.cpp.s
 
 # Help Target
 help:
@@ -199,13 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... test2"
-	@echo "... src/test.o"
-	@echo "... src/test.i"
-	@echo "... src/test.s"
-	@echo "... src/test2.o"
-	@echo "... src/test2.i"
-	@echo "... src/test2.s"
+	@echo "... src/TestModels/TestDistanceModel.o"
+	@echo "... src/TestModels/TestDistanceModel.i"
+	@echo "... src/TestModels/TestDistanceModel.s"
 .PHONY : help
 
 

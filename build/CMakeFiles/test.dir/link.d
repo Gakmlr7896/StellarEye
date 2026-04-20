@@ -2,7 +2,7 @@ test: \
   /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/Scrt1.o \
   /home/phar/miniconda3/envs/DFM/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/crti.o \
   /home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtbeginS.o \
-  CMakeFiles/test.dir/src/test.cpp.o \
+  CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o \
   /home/phar/miniconda3/envs/DFM/lib/libopencv_gapi.so.4.13.0 \
   /home/phar/miniconda3/envs/DFM/lib/libopencv_stitching.so.4.13.0 \
   /home/phar/miniconda3/envs/DFM/lib/libopencv_alphamat.so.4.13.0 \
@@ -312,7 +312,7 @@ test: \
 
 /home/phar/miniconda3/envs/DFM/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtbeginS.o:
 
-CMakeFiles/test.dir/src/test.cpp.o:
+CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o:
 
 /home/phar/miniconda3/envs/DFM/lib/libopencv_gapi.so.4.13.0:
 

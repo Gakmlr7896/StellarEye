@@ -72,28 +72,28 @@ include CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/codegen:
 .PHONY : CMakeFiles/test.dir/codegen
 
-CMakeFiles/test.dir/src/test.cpp.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/src/test.cpp.o: /home/phar/Documents/StellarEye/src/test.cpp
-CMakeFiles/test.dir/src/test.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/phar/Documents/StellarEye/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/test.cpp.o"
-	/home/phar/miniconda3/envs/DFM/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/test.cpp.o -MF CMakeFiles/test.dir/src/test.cpp.o.d -o CMakeFiles/test.dir/src/test.cpp.o -c /home/phar/Documents/StellarEye/src/test.cpp
+CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o: /home/phar/Documents/StellarEye/src/TestModels/TestDistanceModel.cpp
+CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/phar/Documents/StellarEye/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o"
+	/home/phar/miniconda3/envs/DFM/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o -MF CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o.d -o CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o -c /home/phar/Documents/StellarEye/src/TestModels/TestDistanceModel.cpp
 
-CMakeFiles/test.dir/src/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/src/test.cpp.i"
-	/home/phar/miniconda3/envs/DFM/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/phar/Documents/StellarEye/src/test.cpp > CMakeFiles/test.dir/src/test.cpp.i
+CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.i"
+	/home/phar/miniconda3/envs/DFM/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/phar/Documents/StellarEye/src/TestModels/TestDistanceModel.cpp > CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.i
 
-CMakeFiles/test.dir/src/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/test.cpp.s"
-	/home/phar/miniconda3/envs/DFM/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/phar/Documents/StellarEye/src/test.cpp -o CMakeFiles/test.dir/src/test.cpp.s
+CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.s"
+	/home/phar/miniconda3/envs/DFM/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/phar/Documents/StellarEye/src/TestModels/TestDistanceModel.cpp -o CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
-"CMakeFiles/test.dir/src/test.cpp.o"
+"CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
-test: CMakeFiles/test.dir/src/test.cpp.o
+test: CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: CMakeFiles/test.dir/compiler_depend.ts
 test: /home/phar/miniconda3/envs/DFM/lib/libopencv_gapi.so.4.13.0
