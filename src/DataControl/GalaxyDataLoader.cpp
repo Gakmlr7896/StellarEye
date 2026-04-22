@@ -82,8 +82,8 @@ int main() {
     }
 
     // Read and display data from first 10 rows
-    std::cout << "\n=== Data Sample (first 10 rows, all columns) ===" << std::endl;
-    long num_display = std::min(10L, nrows);
+    std::cout << "\n=== Data Sample (first 50 rows, all columns) ===" << std::endl;
+    long num_display = std::min(50L, nrows);
 
     for (int col = 1; col <= ncols; col++) {
         status = 0;
