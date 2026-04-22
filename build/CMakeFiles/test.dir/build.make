@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/phar/miniconda3/envs/DFM/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /home/phar/miniconda3/envs/DFM/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -76,15 +76,15 @@ CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o: CMakeFiles/test.dir/
 CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o: /home/phar/Documents/StellarEye/src/TestModels/TestDistanceModel.cpp
 CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/phar/Documents/StellarEye/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o"
-	/home/phar/miniconda3/envs/DFM/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o -MF CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o.d -o CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o -c /home/phar/Documents/StellarEye/src/TestModels/TestDistanceModel.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o -MF CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o.d -o CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o -c /home/phar/Documents/StellarEye/src/TestModels/TestDistanceModel.cpp
 
 CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.i"
-	/home/phar/miniconda3/envs/DFM/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/phar/Documents/StellarEye/src/TestModels/TestDistanceModel.cpp > CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/phar/Documents/StellarEye/src/TestModels/TestDistanceModel.cpp > CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.i
 
 CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.s"
-	/home/phar/miniconda3/envs/DFM/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/phar/Documents/StellarEye/src/TestModels/TestDistanceModel.cpp -o CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/phar/Documents/StellarEye/src/TestModels/TestDistanceModel.cpp -o CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
@@ -96,71 +96,62 @@ test_EXTERNAL_OBJECTS =
 test: CMakeFiles/test.dir/src/TestModels/TestDistanceModel.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: CMakeFiles/test.dir/compiler_depend.ts
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_gapi.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_stitching.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_alphamat.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_aruco.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_bgsegm.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_bioinspired.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_ccalib.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_cvv.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_dnn_objdetect.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_dnn_superres.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_dpm.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_face.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_freetype.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_fuzzy.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_hdf.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_hfs.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_img_hash.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_intensity_transform.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_line_descriptor.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_mcc.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_quality.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_rapid.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_reg.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_rgbd.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_saliency.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_sfm.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_signal.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_stereo.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_structured_light.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_superres.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_surface_matching.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_tracking.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_videostab.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_wechat_qrcode.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_xfeatures2d.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_xobjdetect.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_xphoto.so.4.13.0
-test: /usr/local/libtorch/lib/libtorch.so
-test: /usr/local/libtorch/lib/libc10.so
-test: /usr/local/libtorch/lib/libkineto.a
-test: /usr/local/cuda-12.6/lib64/libnvrtc.so
-test: /usr/local/libtorch/lib/libc10_cuda.so
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_shape.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_highgui.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_datasets.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_plot.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_text.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_ml.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_phase_unwrapping.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_optflow.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_ximgproc.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_video.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_videoio.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_imgcodecs.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_objdetect.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_calib3d.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_dnn.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_features2d.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_flann.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_photo.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_imgproc.so.4.13.0
-test: /home/phar/miniconda3/envs/DFM/lib/libopencv_core.so.4.13.0
-test: /usr/local/libtorch/lib/libc10_cuda.so
-test: /usr/local/libtorch/lib/libc10.so
-test: /usr/local/cuda-12.6/lib64/libcudart.so
+test: /usr/lib64/libopencv_gapi.so.4.13.0
+test: /usr/lib64/libopencv_stitching.so.4.13.0
+test: /usr/lib64/libopencv_alphamat.so.4.13.0
+test: /usr/lib64/libopencv_aruco.so.4.13.0
+test: /usr/lib64/libopencv_bgsegm.so.4.13.0
+test: /usr/lib64/libopencv_bioinspired.so.4.13.0
+test: /usr/lib64/libopencv_ccalib.so.4.13.0
+test: /usr/lib64/libopencv_cvv.so.4.13.0
+test: /usr/lib64/libopencv_dnn_objdetect.so.4.13.0
+test: /usr/lib64/libopencv_dnn_superres.so.4.13.0
+test: /usr/lib64/libopencv_dpm.so.4.13.0
+test: /usr/lib64/libopencv_face.so.4.13.0
+test: /usr/lib64/libopencv_freetype.so.4.13.0
+test: /usr/lib64/libopencv_fuzzy.so.4.13.0
+test: /usr/lib64/libopencv_hfs.so.4.13.0
+test: /usr/lib64/libopencv_img_hash.so.4.13.0
+test: /usr/lib64/libopencv_intensity_transform.so.4.13.0
+test: /usr/lib64/libopencv_line_descriptor.so.4.13.0
+test: /usr/lib64/libopencv_mcc.so.4.13.0
+test: /usr/lib64/libopencv_quality.so.4.13.0
+test: /usr/lib64/libopencv_rapid.so.4.13.0
+test: /usr/lib64/libopencv_reg.so.4.13.0
+test: /usr/lib64/libopencv_rgbd.so.4.13.0
+test: /usr/lib64/libopencv_saliency.so.4.13.0
+test: /usr/lib64/libopencv_signal.so.4.13.0
+test: /usr/lib64/libopencv_stereo.so.4.13.0
+test: /usr/lib64/libopencv_structured_light.so.4.13.0
+test: /usr/lib64/libopencv_superres.so.4.13.0
+test: /usr/lib64/libopencv_surface_matching.so.4.13.0
+test: /usr/lib64/libopencv_tracking.so.4.13.0
+test: /usr/lib64/libopencv_videostab.so.4.13.0
+test: /usr/lib64/libopencv_wechat_qrcode.so.4.13.0
+test: /usr/lib64/libopencv_xfeatures2d.so.4.13.0
+test: /usr/lib64/libopencv_xobjdetect.so.4.13.0
+test: /usr/lib64/libopencv_xphoto.so.4.13.0
+test: /home/phar/miniconda3/pkgs/libgfortran5-15.2.0-hc633d37_7/lib/libgfortran.so.5
+test: /usr/lib64/libopencv_shape.so.4.13.0
+test: /usr/lib64/libopencv_highgui.so.4.13.0
+test: /usr/lib64/libopencv_datasets.so.4.13.0
+test: /usr/lib64/libopencv_plot.so.4.13.0
+test: /usr/lib64/libopencv_text.so.4.13.0
+test: /usr/lib64/libopencv_ml.so.4.13.0
+test: /usr/lib64/libopencv_phase_unwrapping.so.4.13.0
+test: /usr/lib64/libopencv_optflow.so.4.13.0
+test: /usr/lib64/libopencv_ximgproc.so.4.13.0
+test: /usr/lib64/libopencv_video.so.4.13.0
+test: /usr/lib64/libopencv_videoio.so.4.13.0
+test: /usr/lib64/libopencv_imgcodecs.so.4.13.0
+test: /usr/lib64/libopencv_objdetect.so.4.13.0
+test: /usr/lib64/libopencv_calib3d.so.4.13.0
+test: /usr/lib64/libopencv_dnn.so.4.13.0
+test: /usr/lib64/libopencv_features2d.so.4.13.0
+test: /usr/lib64/libopencv_flann.so.4.13.0
+test: /usr/lib64/libopencv_photo.so.4.13.0
+test: /usr/lib64/libopencv_imgproc.so.4.13.0
+test: /usr/lib64/libopencv_core.so.4.13.0
 test: CMakeFiles/test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/phar/Documents/StellarEye/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
