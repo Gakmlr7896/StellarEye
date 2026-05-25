@@ -25,13 +25,13 @@ int main() {
 
     std::cout << "=== Galaxies FITS File Info ===" << std::endl;
 
-    // Move to HDU 2 (usually contains data)
+    // Move to HDU 2 (Table Data)
     fits_movabs_hdu(fptr, 2, &hdutype, &status);
 
     if (status) {
-        std::cerr << "Error moving to HDU 2, trying HDU 1..." << std::endl;
-        status = 0;
-        fits_movabs_hdu(fptr, 1, &hdutype, &status);
+        fits_report_error(stderr, status);
+        fits_close_file(fptr, &status);
+        return 1;
     }
 
     // Get table dimensions
@@ -82,8 +82,8 @@ int main() {
     }
 
     // Read and display data from first 10 rows
-    std::cout << "\n=== Data Sample (first 10 rows, all columns) ===" << std::endl;
-    long num_display = std::min(10L, nrows);
+    std::cout << "\n=== Data Sample (first 50 rows, all columns) ===" << std::endl;
+    long num_display = std::min(50L, nrows);
 
     for (int col = 1; col <= ncols; col++) {
         status = 0;
