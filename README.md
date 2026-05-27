@@ -25,4 +25,4 @@ Deep Learning Fusion for stellar Age and Metallicity is a project the uses deep 
 To install the data that was used in this project please go to Data/SDSS/data.py and run the file
 
 
-Please contact us on mohamadwesam772@proton.me if you got any questino! 
+Please contact us on muhammedwesam@proton.me if you got any questions! 
